@@ -1,0 +1,25 @@
+import csv
+
+with open('students.csv',
+mode='w', encoding='utf-8', newline='') as file:
+writer = csv.DictWriter(file, ["name", "chinese",
+"english", "math",
+"history", "health"])
+print(type(writer))
+writer.writeheader()
+writer.writerows(students)
+
+#file.close()
+file.closed
+
+這段程式碼的主要功能是將學生的資料寫入一個 CSV 檔案。以下是每一行程式碼的操作說明：
+
+import csv：匯入 Python 的 csv 模組，用於處理 CSV 檔案的讀寫操作。
+file = open('students.csv', mode='w', encoding='utf-8', newline='')：以寫入模式 ('w') 開啟或建立一個名為 students.csv 的檔案，並使用 UTF-8 編碼。newline='' 參數用於避免在 Windows 上寫入多餘的空行。
+writer = csv.DictWriter(file, ["name", "chinese", "english", "math", "history", "health"])：建立一個 DictWriter 物件，並指定 CSV 檔案的欄位名稱。
+print(type(writer))：列印 writer 物件的類型，這行主要用於除錯或確認 writer 物件的類型。
+writer.writeheader()：寫入 CSV 檔案的標題行，即欄位名稱。
+writer.writerows(students)：將 students 清單中的每個字典寫入 CSV 檔案。這裡假設 students 是一個包含多個學生資料的字典清單。
+file.close()：關閉檔案，確保所有資料都已寫入並釋放資源。
+file.closed：檢查檔案是否已經關閉，這行通常用於確認檔案狀態。
+請注意，這段程式碼假設 students 變數已經定義並包含學生資料。如果 students 變數未定義，程式碼將會拋出錯誤。
