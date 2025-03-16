@@ -13,4 +13,72 @@ def main():
     print("存檔完成")
 
 if __name__ == "__main__" :
-    main()
+    main(import pandas as pd
+    import numpy as np
+    
+    # 建立一個包含 NaN 值的 DataFrame
+    data = {'col1': [10, np.nan, 30, np.nan],
+            'col2': [40, 50, np.nan, 70],
+            'col3': [np.nan, np.nan, np.nan, np.nan]}
+    df = pd.DataFrame(data, index=['A','B','C','D'])
+    print("\n原始 DataFrame:\n", df)
+    
+    # 刪除任何欄位中含有 NaN 值的欄位
+    df_dropped_cols = df.dropna(axis=1)
+    print("\n刪除任何欄位中含有 NaN 值的 DataFrame:\n", df_dropped_cols)
+    
+    #刪除只包含NaN的欄位
+    df_dropped_cols_all = df.dropna(axis=1, how='all')
+    print("\n刪除只包含NaN的欄位的DataFrame:\n", df_dropped_cols_all)
+    import pandas as pd
+    import numpy as np
+    
+    # 建立一個包含 NaN 值的 DataFrame
+    data = {'col1': [10, np.nan, 30, np.nan],
+            'col2': [40, 50, np.nan, 70],
+            'col3': [np.nan, np.nan, np.nan, np.nan]}
+    df = pd.DataFrame(data, index=['A','B','C','D'])
+    print("\n原始 DataFrame:\n", df)
+    
+    # 刪除任何欄位中含有 NaN 值的欄位
+    df_dropped_cols = df.dropna(axis=1)
+    print("\n刪除任何欄位中含有 NaN 值的 DataFrame:\n", df_dropped_cols)
+    
+    #刪除只包含NaN的欄位
+    df_dropped_cols_all = df.dropna(axis=1, how='all')
+    print("\n刪除只包含NaN的欄位的DataFrame:\n", df_dropped_cols_all)
+    import pandas as pd
+    import numpy as np
+    
+    # 建立一個包含 NaN 值的 DataFrame
+    data = {'col1': [10, np.nan, 30, np.nan],
+            'col2': [40, 50, np.nan, 70],
+            'col3': [np.nan, np.nan, np.nan, np.nan]}
+    df = pd.DataFrame(data, index=['A','B','C','D'])
+    print("\n原始 DataFrame:\n", df)
+    
+    # 刪除任何欄位中含有 NaN 值的欄位
+    df_dropped_cols = df.dropna(axis=1)
+    print("\n刪除任何欄位中含有 NaN 值的 DataFrame:\n", df_dropped_cols)
+    
+    #刪除只包含NaN的欄位
+    df_dropped_cols_all = df.dropna(axis=1, how='all')
+    print("\n刪除只包含NaN的欄位的DataFrame:\n", df_dropped_cols_all)
+    import pandas as pd
+    import numpy as np
+    
+    # 建立一個包含 NaN 值的 DataFrame
+    data = {'col1': [10, np.nan, 30, np.nan],
+            'col2': [40, 50, np.nan, 70],
+            'col3': [np.nan, np.nan, np.nan, np.nan]}
+    df = pd.DataFrame(data, index=['A','B','C','D'])
+    print("\n原始 DataFrame:\n", df)
+    
+    # 刪除任何欄位中含有 NaN 值的欄位
+    df_dropped_cols = df.dropna(axis=1)
+    print("\n刪除任何欄位中含有 NaN 值的 DataFrame:\n", df_dropped_cols)
+    
+    #刪除只包含NaN的欄位
+    df_dropped_cols_all = df.dropna(axis=1, how='all')
+    print("\n刪除只包含NaN的欄位的DataFrame:\n", df_dropped_cols_all)
+    )
