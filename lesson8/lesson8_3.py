@@ -1,3 +1,4 @@
+from ast import main
 import pandas as pd
 
 df = pd.read_csv('上市公司資料.csv')
